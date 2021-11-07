@@ -18,7 +18,11 @@ const MenuItems = () => {
   return (
     <Stack direction="row" spacing="8" align="center">
       {MENU_ITEMS.map((item) => {
-        return <MenuItem path={item.path}>{item.name}</MenuItem>;
+        return (
+          <MenuItem key={item.name} path={item.path}>
+            {item.name}
+          </MenuItem>
+        );
       })}
     </Stack>
   );
