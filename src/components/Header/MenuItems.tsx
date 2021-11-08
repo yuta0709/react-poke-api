@@ -1,7 +1,7 @@
 import { Stack } from "@chakra-ui/layout";
 import React from "react";
-import MenuItem from "./MenuItem";
 import * as paths from "../../common/constants/paths";
+import MenuItem from "./MenuItem";
 
 const MENU_ITEMS = [
   {

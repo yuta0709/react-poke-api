@@ -1,12 +1,12 @@
+import { Flex, Spinner, Stack, Text } from "@chakra-ui/react";
+import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import client from "../../common/api/client";
 import { Pokedex, PokedexList } from "../../common/api/types";
 import * as apiPaths from "../../common/constants/apiPaths";
-import { Flex, Spinner, Stack, Text } from "@chakra-ui/react";
-import ErrorAlert from "../../components/ErrorAlert";
-import axios from "axios";
-import { Link } from "react-router-dom";
 import { getPokedexPath } from "../../common/utils/path";
+import ErrorAlert from "../../components/ErrorAlert";
 
 const PokedexIndex = () => {
   const [isLoading, setLoading] = useState(true);

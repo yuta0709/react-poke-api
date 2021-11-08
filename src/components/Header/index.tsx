@@ -1,8 +1,8 @@
 import { Flex, Stack } from "@chakra-ui/layout";
 import React from "react";
+import ColorModeSwitcher from "./ColorModeSwitcher";
 import Logo from "./Logo";
 import MenuItems from "./MenuItems";
-import ColorModeSwitcher from "./ColorModeSwitcher";
 
 const Header = () => {
   return (
