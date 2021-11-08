@@ -8,7 +8,7 @@ import * as apiPaths from "../../common/constants/apiPaths";
 import { getPokedexPath } from "../../common/utils/path";
 import ErrorAlert from "../../components/ErrorAlert";
 
-const PokedexIndex = () => {
+const PokedexIndexPage = () => {
   const [isLoading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const [pokedexList, setPokedexList] = useState<Pokedex[]>([] as Pokedex[]);
@@ -59,4 +59,4 @@ const PokedexIndex = () => {
   );
 };
 
-export default PokedexIndex;
+export default PokedexIndexPage;

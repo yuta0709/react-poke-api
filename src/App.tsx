@@ -3,22 +3,18 @@ import * as React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import * as paths from "./common/constants/paths";
 import Header from "./components/Header";
-import Home from "./views/Home";
-import Pokedex from "./views/Pokedex";
-import PokedexIndex from "./views/PokedexIndex";
+import HomePage from "./views/HomePage";
+import PokedexIndexPage from "./views/PokedexIndexPage";
+import PokedexPage from "./views/PokedexPage";
 
 export const App = () => (
   <ChakraProvider theme={theme}>
     <BrowserRouter>
       <Header></Header>
       <Switch>
-        <Route exact path={paths.home}>
-          <Home></Home>
-        </Route>
-        <Route exact path={paths.pokedexIndex}>
-          <PokedexIndex></PokedexIndex>
-        </Route>
-        <Route path={`${paths.pokedexIndex}/:name`} component={Pokedex} />
+        <Route exact path={paths.home} component={HomePage} />
+        <Route exact path={paths.pokedexIndex} component={PokedexIndexPage} />
+        <Route path={`${paths.pokedexIndex}/:name`} component={PokedexPage} />
       </Switch>
     </BrowserRouter>
   </ChakraProvider>
