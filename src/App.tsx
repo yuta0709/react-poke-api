@@ -18,7 +18,7 @@ export const App = () => (
         <Route exact path={paths.pokedexIndex}>
           <PokedexIndex></PokedexIndex>
         </Route>
-        <Route path={`${paths.pokedexIndex}/:id`} component={Pokedex} />
+        <Route path={`${paths.pokedexIndex}/:name`} component={Pokedex} />
       </Switch>
     </BrowserRouter>
   </ChakraProvider>
